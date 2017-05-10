@@ -14,6 +14,7 @@ public class GUIKontroler {
 	private static MenjacnicaGUI menjacnicaGui;
 	private static DodajKursGUI dodajKursGui;
 	private static ObrisiKursGui obrisiKursGui;
+	private static IzvrsiZamenuGUI izvrsiZamenuGui;
 	
 	
 	
@@ -118,5 +119,17 @@ public class GUIKontroler {
 		else{
 			btnObrisi.setEnabled(true);
 		}
+	}
+
+	public static void zatvoriProzorIzvrsiZamenuGUI() {
+		izvrsiZamenuGui.dispose();
+		izvrsiZamenuGui = null;
+		
+	}
+
+	public static void otvoriProzorIzvrsiZamenuGUI() {
+		GUIKontroler.izvrsiZamenuGui = new IzvrsiZamenuGUI();
+		izvrsiZamenuGui.setVisible(true);
+		
 	}
 }
