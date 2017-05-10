@@ -11,6 +11,7 @@ import javax.swing.JTextField;
 public class GUIKontroler {
 
 	private static MenjacnicaGUI menjacnicaGui;
+	private static DodajKursGUI dodajKursGui;
 	
 	
 	
@@ -55,8 +56,8 @@ public class GUIKontroler {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					MenjacnicaGUI frame = new MenjacnicaGUI();
-					frame.setVisible(true);
+					GUIKontroler.menjacnicaGui = new MenjacnicaGUI();
+					menjacnicaGui.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -78,5 +79,21 @@ public class GUIKontroler {
 	public static void podaci(){
 		
 		JOptionPane.showMessageDialog(menjacnicaGui, "Ilija Starcevic,Fakultet Organizacionih Nauka");
+	}
+	
+	public static void otvoriProzorDodajKursGUI(){
+		GUIKontroler.dodajKursGui = new DodajKursGUI();
+		dodajKursGui.setVisible(true);
+	}
+
+	public static void zatvoriProzorDodajKursGUI() {
+		
+		dodajKursGui.dispose();
+		dodajKursGui = null;
+	}
+	
+	public static void upisiTextUMenjacnicaGUI(String string) {
+		String txt = menjacnicaGui.getSouthTextArea().getText() + " \n" + string;
+		upisiTekst(txt, menjacnicaGui.getSouthTextArea());
 	}
 }
