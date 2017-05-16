@@ -1,4 +1,4 @@
-package gui;
+package menjacnica.gui;
 
 import java.awt.EventQueue;
 import java.io.File;
@@ -61,6 +61,7 @@ public class GUIKontroler {
 				try {
 					GUIKontroler.menjacnicaGui = new MenjacnicaGUI();
 					menjacnicaGui.setVisible(true);
+					menjacnicaGui.setLocationRelativeTo(null);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -87,6 +88,7 @@ public class GUIKontroler {
 	public static void otvoriProzorDodajKursGUI(){
 		GUIKontroler.dodajKursGui = new DodajKursGUI();
 		dodajKursGui.setVisible(true);
+		dodajKursGui.setLocationRelativeTo(null);
 	}
 
 	public static void zatvoriProzorDodajKursGUI() {
@@ -96,7 +98,7 @@ public class GUIKontroler {
 	}
 	
 	public static void upisiTextUMenjacnicaGUI(String string) {
-		String txt = menjacnicaGui.getSouthTextArea().getText() + " \n" + string;
+		String txt = menjacnicaGui.getSouthTextArea().getText() + string;
 		upisiTekst(txt, menjacnicaGui.getSouthTextArea());
 	}
 	
@@ -108,6 +110,7 @@ public class GUIKontroler {
 	public static void otvoriProzorObrisiKursGUI() {
 		GUIKontroler.obrisiKursGui = new ObrisiKursGui();
 		obrisiKursGui.setVisible(true);
+		obrisiKursGui.setLocationRelativeTo(null);
 		
 	}
 
@@ -130,6 +133,7 @@ public class GUIKontroler {
 	public static void otvoriProzorIzvrsiZamenuGUI() {
 		GUIKontroler.izvrsiZamenuGui = new IzvrsiZamenuGUI();
 		izvrsiZamenuGui.setVisible(true);
+		izvrsiZamenuGui.setLocationRelativeTo(null);
 		
 	}
 }

@@ -1,4 +1,4 @@
-package gui;
+package menjacnica.gui;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -62,7 +62,8 @@ public class MenjacnicaGUI extends JFrame {
 	 * Create the frame.
 	 */
 	public MenjacnicaGUI() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage(MenjacnicaGUI.class.getResource("/gui/dollar-sign-vector.jpg")));
+		
+		setIconImage(Toolkit.getDefaultToolkit().getImage(MenjacnicaGUI.class.getResource("/pic/dollar.jpg")));
 		setTitle("Menjacnica");
 		setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 		setBounds(100, 100, 667, 438);

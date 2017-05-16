@@ -1,4 +1,4 @@
-package gui;
+package menjacnica.gui;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -209,7 +209,7 @@ public class ObrisiKursGui extends JFrame {
 					GUIKontroler.upisiTextUMenjacnicaGUI("Obrisan kurs \n Sifra : " + getSifraTextField().getText() + " ; Naziv : " + getNazivTextField().getText()
 							+ " ; Prodajni kurs : " + getProdajniKursTextField().getText() + " ; Kupovni kurs : " + getKupovniKursTextField().getText()
 							+ " ; Srednji kurs : " + getSrednjiKursTextField().getText() + " ; Skraceni Naziv : "
-							+ getSkraceniNazivTextField().getText());
+							+ getSkraceniNazivTextField().getText()+"\n");
 				}
 			});
 			btnObrisi.setEnabled(false);

@@ -1,4 +1,4 @@
-package gui;
+package menjacnica.gui;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -216,7 +216,7 @@ public class IzvrsiZamenuGUI extends JFrame {
 					
 					GUIKontroler.upisiTextUMenjacnicaGUI("Izvrsena zamena \n Valuta : "
 							+ valutaComboBox.getSelectedItem().toString() + " ; Iznos : " + iznosTextField.getText()
-							+ " ; Vrsta transakcije : " + transakcija);
+							+ " ; Vrsta transakcije : " + transakcija+"\n");
 				}
 				}
 			);
